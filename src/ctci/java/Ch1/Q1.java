@@ -1,3 +1,5 @@
+package Ch1;
+
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -12,15 +14,17 @@ import java.util.Set;
 public class Q1 {
 
     public static void main(String[] args) {
+        System.out.println("Determines whether a string has all unique characters");
         Scanner in = new Scanner(System.in);
          while (true) {
-             System.out.println("Your input: ");
+             System.out.print("Your input: ");
              String input = in.nextLine();
              boolean result1 = allUniqueChars(input);
              boolean result2 = allUniqueCharsNoStruct(input);
              boolean result3 = allUniqueCharsBest(input);
              assert result1 == result2 & result1 == result3;
-             System.out.println("Results for allUnique: " + input + ": " + result1);
+             System.out.println("Is " + input + " all unique? " + result1);
+             System.out.println();
 
          }
     }
