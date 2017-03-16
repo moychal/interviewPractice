@@ -23,9 +23,19 @@ def isAllUniqueWorse(str):
             seen.add(c)
     return True
 
+# O(n) time, O(1) space but better than size of ascii
+def isAllUniqueBit(str):
+    ctr = 0
+    for c in str:
+        val = ord(c)
+        if (ctr & (1 << val)):
+            return False
+        else:
+            ctr = ctr | (1 << val)
+    return True
+
 
 if __name__ == '__main__':
-    # Print shit
     print "Determines whether a string is all unique characters"
     while True:
         print "Input string: "
@@ -33,7 +43,9 @@ if __name__ == '__main__':
         # print "received: ", strIn
         result1 = isAllUnique(strIn)
         result2 = isAllUniqueWorse(strIn)
+        result3 = isAllUniqueBit(strIn)
         assert result1 == result2
+        assert result2 == result3
         print "Result: ", result1
         print
 
