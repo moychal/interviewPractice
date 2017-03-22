@@ -22,7 +22,7 @@ def stringCompress(input):
 
 if __name__ == '__main__':
 
-    print "Decide if one string is a permutation of the other"
+    print "Basic string compression  using counts of repeated adjacent characters"
     while True:
         print "Input string: "
         input = list(raw_input())

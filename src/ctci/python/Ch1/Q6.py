@@ -38,7 +38,7 @@ def rotateMatrixInPlace(input):
 
 
 if __name__ == '__main__':
-    print "Decide if one string is a permutation of the other"
+    print "Rotate a NxN matrix 90 degrees clockwise."
     # input = [
     #     ["a", "b", "c"],
     #     ["d", "e", "f"],

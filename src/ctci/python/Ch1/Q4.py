@@ -34,7 +34,7 @@ def replaceAllSpacesCorrect(str, trueLength):
     return str
 
 if __name__ == '__main__':
-    print "Decide if one string is a permutation of the other"
+    print "Replace all spaces in a string with '%20'"
     while True:
         print "Input string: "
         str = list(raw_input())
